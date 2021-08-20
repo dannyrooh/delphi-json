@@ -1,0 +1,9 @@
+unit Cotacao.Dolar.Entity;
+
+interface
+
+{%M+}
+
+implementation
+
+end.
