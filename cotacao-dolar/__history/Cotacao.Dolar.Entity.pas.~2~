@@ -1,0 +1,31 @@
+{ ***************************************************************************
+ Dannyrooh Fernandes | https://github.com/dannyrooh | Licença MIT
+
+ 1) realiza consulta da cotação do Banco Central
+ 2) monta uma pagina com BootStrap e Chart.js
+
+ 08/2021 - created
+
+ *************************************************************************** }
+unit Cotacao.Dolar.Entity;
+
+interface
+
+{%M+}
+
+type
+  TCotacaoDolarEntity = class
+  private
+    FcotacaoVenda: double;
+    FdataHoraCotacao: string;
+    FcotacaoCompra: double;
+  published
+    property cotacaoCompra: double read FcotacaoCompra write FcotacaoCompra;
+    property cotacaoVenda: double read FcotacaoVenda write FcotacaoVenda;
+    property dataHoraCotacao: string read FdataHoraCotacao write FdataHoraCotacao;
+  end;
+
+
+implementation
+
+end.

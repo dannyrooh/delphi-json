@@ -3,7 +3,10 @@
 
 Este exemplo tem como finalidade buscar a cotação oficial do dólar, consumindo a API do Bacen (Banco Central do Brasil) em Json, e retornar a data e hora da cotação, preço de compra e venda.
 
-> Para saber mais sobre o projeto de dados abertos do Banco Central do Brasil, acesse o link <https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/documentacao>
+> Para saber mais sobre o projeto de dados abertos do Banco Central do Brasil, acesse:
+> <https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/documentacao>
+> <https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/documentacao#CotacaoDolarDia>
+> <https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/aplicacao#!/recursos/CotacaoDolarDia#eyJmb3JtdWxhcmlvIjp7IiRmb3JtYXQiOiJqc29uIiwiJHRvcCI6MTAwfX0=>
 
 
 ## Versão utilizada do Delphi

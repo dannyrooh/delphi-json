@@ -1,18 +1,16 @@
-{ *************************************************************************** }
-{
-{ Dannyrooh F. Campos
-{
-{ https://github.com/dannyrooh
-{
-{ Curitiba/Brazil
-{ 08/2021 - created
-(
-{ *************************************************************************** }
+{ ***************************************************************************
+ Dannyrooh Fernandes | https://github.com/dannyrooh | Licença MIT
+
+ 1) Entity
+
+ 08/2021 - created
+
+ *************************************************************************** }
 unit Cotacao.Dolar.Entity;
 
 interface
 
-{%M+}
+{$M+}
 
 type
   TCotacaoDolarEntity = class

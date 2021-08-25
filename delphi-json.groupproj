@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{09B048D3-C50B-49C8-AA49-5E9FA6C3337C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="grafico-dolar\grafico_dolar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="cotacao-dolar\cotacao_dolar.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="grafico_dolar">
+        <MSBuild Projects="grafico-dolar\grafico_dolar.dproj"/>
+    </Target>
+    <Target Name="grafico_dolar:Clean">
+        <MSBuild Projects="grafico-dolar\grafico_dolar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="grafico_dolar:Make">
+        <MSBuild Projects="grafico-dolar\grafico_dolar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="cotacao_dolar">
+        <MSBuild Projects="cotacao-dolar\cotacao_dolar.dproj"/>
+    </Target>
+    <Target Name="cotacao_dolar:Clean">
+        <MSBuild Projects="cotacao-dolar\cotacao_dolar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cotacao_dolar:Make">
+        <MSBuild Projects="cotacao-dolar\cotacao_dolar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="grafico_dolar;cotacao_dolar"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="grafico_dolar:Clean;cotacao_dolar:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="grafico_dolar:Make;cotacao_dolar:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

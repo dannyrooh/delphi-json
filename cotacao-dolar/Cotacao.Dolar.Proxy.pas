@@ -1,13 +1,11 @@
-{ *************************************************************************** }
-{
-{ Dannyrooh F. Campos
-{
-{ https://github.com/dannyrooh
-{
-{ Curitiba/Brazil
-{ 08/2021 - created
-(
-{ *************************************************************************** }
+{ ***************************************************************************
+ Dannyrooh Fernandes | https://github.com/dannyrooh | Licença MIT
+
+ 1) Classe para realizar a busca do cotação do dólar
+
+ 08/2021 - created
+
+ *************************************************************************** }
 unit Cotacao.Dolar.Proxy;
 
 interface
